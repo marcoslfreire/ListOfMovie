@@ -1,4 +1,4 @@
 package com.alura.listfilme.repository
 
-class MovieRepository {
+class MovieRepositoryc {
 }
