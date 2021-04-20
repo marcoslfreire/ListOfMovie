@@ -4,6 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class MovieRestApi {
+    //fAÇAS A INTANCIA DE UM OBJETO DE RETROFIT QUE IRA RETORNA A CONSULTA AO WEB.
     companion object{
         const val BASE_URL = ("https://raw.githubusercontent.com/")
     }
