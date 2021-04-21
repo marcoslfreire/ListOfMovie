@@ -8,5 +8,5 @@ interface MovieApi {
 
     //Chamada para API LISTA DE FILMES
     @GET("natanfelipe/FilmesFlixJson/master/moviesList")
-    fun getAllMovie(): Call<List<Movie>>
+    fun getAllMovies(): Call<List<Movie>>
 }

@@ -2,7 +2,7 @@ package com.alura.listfilme
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.Observer
+import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.alura.listoffilms.R
 import com.alura.listfilme.view.model.MovieListViewModel
@@ -19,11 +19,15 @@ class MainActivity : AppCompatActivity() {
         moviesListViewModel= ViewModelProvider.NewInstanceFactory().create(MovieListViewModel::class.java)
         moviesListViewModel.init()
         initObserver()
+        loadingVisibility(true)
     }
     private fun initObserver(){
         moviesListViewModel.moviesList.observe(this,  { list ->
-            populateList(list)
+            if (list.isEmpty()){
+                populateList(list)
 
+                loadingVisibility(false)
+            }
         })
     }
     private fun populateList(list : List<Movie>){
@@ -31,5 +35,9 @@ class MainActivity : AppCompatActivity() {
             hasFixedSize()
             adapter = MovieAdapter(list)
         }
+    }
+
+    private fun loadingVisibility(isLoading: Boolean){
+        progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
 }
