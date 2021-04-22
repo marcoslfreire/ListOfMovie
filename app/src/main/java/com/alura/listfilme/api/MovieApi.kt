@@ -1,6 +1,6 @@
 package com.alura.listfilme.api
 
-import com.alura.listfilme.Movie
+import com.alura.listfilme.domain.Movie
 import retrofit2.Call
 import retrofit2.http.GET
 

@@ -1,4 +1,4 @@
-package com.alura.listfilme
+package com.alura.listfilme.domain
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

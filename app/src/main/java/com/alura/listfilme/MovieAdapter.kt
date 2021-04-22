@@ -1,10 +1,10 @@
 package com.alura.listfilme
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.alura.listfilme.domain.Movie
 import com.alura.listoffilms.R
 import kotlinx.android.synthetic.main.movie_item_layout.view.*
 

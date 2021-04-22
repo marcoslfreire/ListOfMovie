@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.alura.listfilme.Movie
+import com.alura.listfilme.domain.Movie
 import com.alura.listfilme.api.MovieRestApi
 import com.alura.listfilme.repository.MovieRepository
 import kotlin.Exception

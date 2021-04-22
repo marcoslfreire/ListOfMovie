@@ -1,7 +1,7 @@
 package com.alura.listfilme.repository
 
 import android.util.Log
-import com.alura.listfilme.Movie
+import com.alura.listfilme.domain.Movie
 import com.alura.listfilme.api.MovieRestApi
 
 class MovieRepository(private val movieRestApi: MovieRestApi){

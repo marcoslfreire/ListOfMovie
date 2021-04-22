@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
+import com.alura.listfilme.domain.Movie
 import com.alura.listoffilms.R
 import com.alura.listfilme.view.model.MovieListViewModel
 import kotlinx.android.synthetic.main.activity_main.*
