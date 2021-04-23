@@ -1,16 +1,17 @@
-package com.alura.listfilme.repository
+package com.alura.listfilme.inplementations
 
 import android.util.Log
-import com.alura.listfilme.domain.Movie
 import com.alura.listfilme.api.MovieRestApi
+import com.alura.listfilme.data.MovieDataSource
+import com.alura.listfilme.domain.Movie
 
-class MovieRepository(private val movieRestApi: MovieRestApi){
+class MovieDataSourceImplementation(private val movieRestApi: MovieRestApi):MovieDataSource {
     companion object{
         const val TAG = "MovieRepository"
     }
     private val movieList = arrayListOf<Movie>()
 
-    fun getAllMovies(): List<Movie>{
+    override fun getAllMovies(): List<Movie> {
 
         val request = movieRestApi.retrofitApi().getAllMovies().execute()
 
@@ -20,6 +21,7 @@ class MovieRepository(private val movieRestApi: MovieRestApi){
             }
         }else{
             request.errorBody()?.let {
+
                 Log.d(TAG, it.toString())
             }
         }

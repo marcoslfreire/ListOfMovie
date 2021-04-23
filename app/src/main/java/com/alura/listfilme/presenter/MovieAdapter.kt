@@ -1,4 +1,4 @@
-package com.alura.listfilme
+package com.alura.listfilme.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
