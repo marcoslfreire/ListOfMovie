@@ -1,4 +1,4 @@
-package com.alura.listfilme.view
+package com.alura.listfilme.presenter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

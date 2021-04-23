@@ -1,7 +1,7 @@
 package com.alura.listfilme.inplementations
 
 import android.util.Log
-import com.alura.listfilme.api.MovieRestApi
+import com.alura.listfilme.framework.api.MovieRestApi
 import com.alura.listfilme.data.MovieDataSource
 import com.alura.listfilme.domain.Movie
 
@@ -12,7 +12,6 @@ class MovieDataSourceImplementation(private val movieRestApi: MovieRestApi):Movi
     private val movieList = arrayListOf<Movie>()
 
     override fun getAllMovies(): List<Movie> {
-
         val request = movieRestApi.retrofitApi().getAllMovies().execute()
 
         if (request.isSuccessful){
@@ -21,7 +20,6 @@ class MovieDataSourceImplementation(private val movieRestApi: MovieRestApi):Movi
             }
         }else{
             request.errorBody()?.let {
-
                 Log.d(TAG, it.toString())
             }
         }

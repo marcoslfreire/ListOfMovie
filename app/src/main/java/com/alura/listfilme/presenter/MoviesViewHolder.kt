@@ -1,4 +1,4 @@
-package com.alura.listfilme.view
+package com.alura.listfilme.presenter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

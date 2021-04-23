@@ -1,4 +1,4 @@
-package com.alura.listfilme.api
+package com.alura.listfilme.framework.api
 
 import com.alura.listfilme.domain.Movie
 import retrofit2.Call

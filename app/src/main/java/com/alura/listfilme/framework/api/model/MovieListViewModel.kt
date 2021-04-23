@@ -1,4 +1,4 @@
-package com.alura.listfilme.view.model
+package com.alura.listfilme.framework.api.model
 
 import android.util.Log
 import androidx.lifecycle.LiveData
